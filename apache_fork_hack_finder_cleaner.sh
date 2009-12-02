@@ -6,13 +6,13 @@
 # BIG FAT WARNING: This script is dumb. Do not execute it before altering constants and backing up your files!
 # Some parts are server-specific and may never run on your configuration properly.
 
-#PAYLOAD='eval *\( *base64_decode' # Most evil is behind this snippet. BUT! Wordpress also produces this code!
-PAYLOAD="e[^a-z]*v[^a-z]*a[^a-z]*l[^a-z]*b[^a-z]*a[^a-z]*s[^a-z]*e[^a-z]*6[^a-z]*4[^a-z]*_[^a-z]*d[^a-z]*e[^a-z]*c[^a-z]*o[^a-z]*d[^a-z]*e"
+PAYLOAD='eval *\( *base64_decode' # Most evil is behind this snippet. BUT! Wordpress also produces this code!
+#PAYLOAD="e[^a-z]*v[^a-z]*a[^a-z]*l[^a-z]*b[^a-z]*a[^a-z]*s[^a-z]*e[^a-z]*6[^a-z]*4[^a-z]*_[^a-z]*d[^a-z]*e[^a-z]*c[^a-z]*o[^a-z]*d[^a-z]*e"
 
 PHP_EXT='*.php' # Keygenguru hack infects afaik only *.php files
 RECORDS='/tmp/results_scan' # Where to store infected files list?
-#HTDOCS='/var/www/' # Where is your htdocs?
-HTDOCS='/DISK2/www/' # Where is your htdocs?
+HTDOCS='/var/www/' # Where is your htdocs?
+#HTDOCS='/DISK2/www/' # Where is your htdocs?
 TYPES_DIR='/tmp/types/' # Where to store parsed hack types logs?
 FIRST_LINES="999999" # Just a hand-break for development.
 LE=".log" # Where to store infected files log.
